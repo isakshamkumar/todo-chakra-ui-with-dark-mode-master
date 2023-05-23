@@ -39,7 +39,14 @@ function App() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <VStack p={4}>
+    // Vstack is basically dflex, align center, direction-column
+    //here numbers can go from 1-64....1 means 4 px
+    /**The HStack component applies the following styles to its children:
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center; */
+    <VStack p={4}>   
       <IconButton
         icon={colorMode === 'light' ? <FaSun /> : <FaMoon />}
         isRound='true'
